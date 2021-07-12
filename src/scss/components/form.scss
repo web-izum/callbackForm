@@ -1,0 +1,60 @@
+.overlay {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.call-back-form {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  max-width: 850px;
+  padding: 40px 120px;
+  margin: 0 auto;
+
+  background: #fff;
+  border: 1px solid #ccc;
+
+  .form {
+
+    &__notes {
+
+      color: red;
+    }
+
+    &__btn {
+
+      color: #333;
+      background: yellow;
+
+      border: none;
+    }
+
+    .req-item {
+
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+
+        content: '*';
+        position: absolute;
+        left: 0;
+        top: 50%;
+
+        font-size: 20px;
+        color: red;
+
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
